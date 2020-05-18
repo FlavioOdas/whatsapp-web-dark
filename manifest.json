@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "WhatsApp Web Dark",
+    "description": "Transform your default WhatsApp Web application theme into dark mode",
+    "author": "Flavio Odas Junior",
+    "browser_action": {
+   	 "default_title": "WhatsApp Web Dark",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://web.whatsapp.com/"],
+          "js": ["main.js"]
+        }
+      ]
+}
